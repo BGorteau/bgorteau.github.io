@@ -4,134 +4,50 @@
   <meta charset="UTF-8">
   <title>Mon Site Web</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-  <style>
-    /* style pour la séparation verticale */
-    h2 {
-      font-weight: 500;
-    }
-    h1 {
-      font-weight: 500;
-    }
-    #body {
-      font-family: HelveticaNeue, sans-serif;
-    }
-    #left {
-      float: left;
-      width: 25%;
-      border-right: 1px solid;
-      border-right-color: #e5e4e3;
-      padding: 10px;
-    }
-    #right {
-      float: right;
-      width: 70%;
-      padding: 10px;
-    }
-    #menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: start;
-      font-size: 20px;
-      font-weight: 700;
-      border-bottom: 1px solid;
-      border-bottom-color: #e5e4e3;
-      padding-bottom: 10px;
-    }
-    #menu li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    #menu li a {
-      text-decoration: none;
-      color : black;
-      padding: 10px;
-    }
-    #menu li a:hover {
-      color: #6f6df7;
-    }
-    .image-cercle {
-        border-radius: 50%;
-        overflow: hidden;
-        width: 100px;
-        height: 100px;
-    }
-    .image-cercle img {
-        width: 100%;
-        height: auto;
-    }
-    .pres-R2{
-        font-family: HelveticaNeue, sans-serif;
-        color : #7c7c79;
-        margin-bottom: 20px;
-    }
-    .pres-R2 a {
-        color : #6f6df7;
-    }
-    .pres-Cap{
-        font-family: HelveticaNeue, sans-serif;
-        color : #7c7c79;
-    }
-    .pres-Cap a {
-        color : #6f6df7;
-    }
-    .github-logo{
-      color : black;
-    }
-    .CV h2 {
-      font-size: 35px;
-      font-weight: 500;
-    }
-    .CV li {
-      margin-bottom: 15px;
-    }
-    .bolded {
-      font-weight: 600;
-      color : #6f6df7;
-    }
-    .cv-text-description {
-      color : #7c7c79;
-    }
-    .bolded-black {
-      color : black;
-      font-weight: 600;
-    }
-  </style>
+  <link rel="stylesheet" href='style.css'>
+  <script src='script.js' defer></script>
 </head>
 <body id="body">
-
-  <div id="left">
-    <div class="image-cercle">
-      <img src="images/photo_BGO.JPG" alt="Photo profil">
+  <div id="top-page">
+    <div id = "left-top-page">
+      <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <center>
+        <div class="image-cercle">
+            <img src="images/photo_BGO.JPG" alt="Photo profil">
+          </div>
+          <h2> Baptiste Gorteau </h2>
+          </center>
+          <div class = pres-R2>
+            Diplômé <a href=https://sites-formations.univ-rennes2.fr/master-mas/>master MAS</a> (mathématiques appliqués aux statistiques) <br>
+            📍 <a href = https://www.univ-rennes2.fr/> Université Rennes 2 </a>
+          </div>
+          <h2>Réseaux</h2>
+          <a class = "github-logo" href="https://github.com/BGorteau"><i class="fab fa-github" style='font-size:30px'></i></a>
+      </div>
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
     </div>
-    <h2> Baptiste Gorteau </h2>
-    <div class = pres-R2>
-      Étudiant en <a href=https://sites-formations.univ-rennes2.fr/master-mas/>master MAS</a> (mathématiques appliqués aux statistiques) <br>
-      📍 <a href = https://www.univ-rennes2.fr/> Université Rennes 2 </a>
-    </div>
-    <div class = pres-Cap>
-      Alternant Developper / Data Ingénieur chez <a href=https://www.capgemini.com/fr-fr/>Capgemini</a> <br> 
-      📍 Rennes
-    </div>
-    <h2>Réseaux</h2>
-    <a class = "github-logo" href="https://github.com/BGorteau"><i class="fab fa-github" style='font-size:30px'></i></a>
-  </div>
-
-  <div id="right">
-
+    <div id = "right-top-page">
     <ul id="menu">
-      <li><a href="index.html">Acceuil</a></li>
+      <li><a href="index.html">Accueil</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="page-projets-ecole.html">Projets université</a></li>
       <li><a href="page-projets-perso.html">Projets personnels</a></li>
     </ul>
-
-    <div class = CV>
+    </div>
+  </div>
+  <div class = CV>
 
       <h2> Études </h2>
 
       <ul> 
-        <li> <span class="bolded">Septembre 2021 - Aujourd'hui :</span> Master MAS (Mathématiques appliqués statistiques) parcours science des données <br> 📍 Université Rennes 2 🇫🇷</li>
+        <li> <span class="bolded">Septembre 2021 - Septembre 2023 :</span> Master MAS (Mathématiques appliqués statistiques) parcours science des données <br> 📍 Université Rennes 2 🇫🇷</li>
         <li> <span class="bolded">Septembre 2018 - Juin 2021 :</span> Licence MIASHS (Mathématiques appliqués aux sciences humaines et sociales) <br> 📍 Université Rennes 2 🇫🇷</li>
         <li> <span class="bolded">Juillet 2016 - Septembre 2016 :</span> Grade 11 mathematics, life science and physics <br> 📍 Glen High School Pretoria 🇿🇦 </li>
         <li> <span class="bolded">Septembre 2015 - Juin 2018 :</span> Bac scientifique mention Bien <br> 📍 Lycée Bossuet Lannion 🇫🇷 </li>
@@ -140,16 +56,13 @@
       <h2> Expériences </h2>
 
       <ul> 
-        <li> <span class="bolded">Septembre 2022 - Aujourd'hui :</span> Alternance data engineering <br> 
+        <li> <span class="bolded">Mai 2022 - Septembre 2023 :</span> Alternance data engineering <br> 
           <span class="cv-text-description"> Développement de règles de gestion, lancement de test sur des serveurs, développement d'une application R Shiny, Missions data science. </span> <br> <span class = "bolded-black"> Pyspark, R Shiny, Shell, Hive, HDFS, Postgre SQL </span><br> 📍 Capgemini Rennes 🇫🇷</li>
         <li> <span class="bolded">Mai 2022 - Août 2022 :</span> Stage data engineering <br> <span class="cv-text-description"> Développement de règles de gestion et de tests. Relecture de code. </span> <br> <span class="bolded-black"> Pyspark, Pytest, SQL, Hive, Postgre SQL </span> <br> 📍 Capgemini Rennes 🇫🇷</li>
         <li> <span class="bolded">Janvier 2022 - Mars 2022:</span> Stage data science <br> <span class="cv-text-description"> Analyse de données sur les techniques de traduction dans le milieu de la recherche en sciences sociales. </span> <br>
         <span class = "bolded-black"> Python, R </span> <br> 📍 MSHB (Maison des sciences de l'homme en Bretagne) Rennes 🇫🇷 </li>
         <li> <span class="bolded"> Mai 2021 - Juin 2021 :</span> Stage data science <br> <span class="cv-text-description"> Analyse de données dans le cadre d’un sujet de recherche sur le football et la réalité virtuelle. </span> <br> <span class="bolded-balck"> Python, R </span> <br> 📍 Laboratoire M2S Bruz 🇫🇷 </li>
       </ul>
-
     </div>
-
-  </div>
 </body>
 </html>
