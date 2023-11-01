@@ -4,109 +4,47 @@
   <meta charset="UTF-8">
   <title>Mon Site Web</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-  <style>
-    /* style pour la séparation verticale */
-    h2 {
-      font-weight: 500;
-    }
-    h1 {
-      font-weight: 500;
-    }
-    #body {
-      font-family: HelveticaNeue, sans-serif;
-    }
-    #left {
-      float: left;
-      width: 25%;
-      border-right: 1px solid;
-      border-right-color: #e5e4e3;
-      padding: 10px;
-    }
-    #right {
-      float: right;
-      width: 75%;
-      padding: 10px;
-    }
-    #menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: start;
-      font-size: 20px;
-      font-weight: 700;
-      border-bottom: 1px solid;
-      border-bottom-color: #e5e4e3;
-      padding-bottom: 10px;
-    }
-    #menu li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    #menu li a {
-      text-decoration: none;
-      color : black;
-      padding: 10px;
-    }
-    #menu li a:hover {
-      color: #6f6df7;
-    }
-    .image-cercle {
-        border-radius: 50%;
-        overflow: hidden;
-        width: 100px;
-        height: 100px;
-    }
-    .image-cercle img {
-        width: 100%;
-        height: auto;
-    }
-    .pres-R2{
-        font-family: HelveticaNeue, sans-serif;
-        color : #7c7c79;
-        margin-bottom: 20px;
-    }
-    .pres-R2 a {
-        color : #6f6df7;
-    }
-    .pres-Cap{
-        font-family: HelveticaNeue, sans-serif;
-        color : #7c7c79;
-    }
-    .pres-Cap a {
-        color : #6f6df7;
-    }
-    .github-logo{
-      color : black;
-    }
-  </style>
+  <link rel="stylesheet" href='../style.css'>
+  <script src='../script.js' defer></script>
 </head>
 <body id="body">
-
-  <div id="left">
-    <div class="image-cercle">
-      <img src="../images/photo_BGO.JPG" alt="Photo profil">
+  <div id="top-page">
+    <div id = "left-top-page">
+    <div id="mySidenav" class="sidenav">
+      <a id="closeBtn" href="#" class="close">×</a>
+      <center>
+      <div class="image-cercle">
+          <img src="../images/photo_BGO.JPG" alt="Photo profil">
+        </div>
+        <h2> Baptiste Gorteau </h2>
+        </center>
+        <div class = pres-R2>
+          Diplômé <a href=https://sites-formations.univ-rennes2.fr/master-mas/>master MAS</a> (mathématiques appliqués aux statistiques) <br>
+          📍 <a href = https://www.univ-rennes2.fr/> Université Rennes 2 </a>
+        </div>
+        <h2>Réseaux</h2>
+        <a class = "github-logo" href="https://github.com/BGorteau"><i class="fab fa-github" style='font-size:30px'></i></a>
+        <a class = "github-logo" href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/"><i class="fab fa-linkedin" style='font-size:30px'></i></a>
     </div>
-    <h2> Baptiste Gorteau </h2>
-    <div class = pres-R2>
-      Étudiant en <a href=https://sites-formations.univ-rennes2.fr/master-mas/>master MAS</a> (mathématiques appliqués aux statistiques) <br>
-      📍 <a href = https://www.univ-rennes2.fr/> Université Rennes 2 </a>
-    </div>
-    <div class = pres-Cap>
-      Alternant Developper / Data Ingénieur chez <a href=https://www.capgemini.com/fr-fr/>Capgemini</a> <br> 
-      📍 Rennes
-    </div>
-    <h2>Réseaux</h2>
-    <a class = "github-logo" href="https://github.com/BGorteau"><i class="fab fa-github" style='font-size:30px'></i></a>
+    <a href="#" id="openBtn">
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </a>
+  </div>
+  <div id = "right-top-page">
+  <ul id="menu">
+    <li><a href="../index.html">Accueil</a></li>
+    <li><a href="../cv.html">CV</a></li>
+    <li><a href="../page-projets-ecole.html">Projets université</a></li>
+    <li><a href="../page-projets-perso.html">Projets personnels</a></li>
+  </ul>
+  </div>
   </div>
 
-  <div id="right">
-
-    <ul id="menu">
-      <li><a href="../index.html">Acceuil</a></li>
-      <li><a href="../cv.html">CV</a></li>
-      <li><a href="../page-projets-ecole.html">Projets université</a></li>
-      <li><a href="../page-projets-perso.html">Projets personnels</a></li>
-    </ul>
+<div id="projet-content">
     <!DOCTYPE html>
 
 <html>
@@ -790,5 +728,6 @@ $(document).ready(function () {
 </body>
 </html>
   </div>
+</div>
 </body>
 </html>
