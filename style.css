@@ -89,7 +89,7 @@ a:active {
 #download-cv {
   width: 200px;
   height: 40px;
-  background-color: #315da3;
+  background-color: #1e7898;
   color: white;
   border-radius: 20px;
   font-weight: 700;
@@ -101,7 +101,7 @@ a:active {
 #acces-button {
   width: 150px;
   height: 40px;
-  background-color: #315da3;
+  background-color: #1e7898;
   color: white;
   border-radius: 20px;
   display: flex;
@@ -140,6 +140,12 @@ a:active {
   padding: 20px;
   padding-left: 100px;
   padding-right: 100px;
+  width: 800px;
+}
+#projet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidenav {
@@ -291,7 +297,7 @@ margin: 6px 0;
   color : #6f6df7;
 }
 .cv-text-description {
-  color : #7c7c79;
+  color : #363738;
 }
 .bolded-black {
   color : black;
