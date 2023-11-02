@@ -54,7 +54,11 @@ a:active {
 	padding: 10px;
 }
 #right-top-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 	width: 95%;
+  padding-right: 20px;
 }
 #menu {
   list-style: none;
