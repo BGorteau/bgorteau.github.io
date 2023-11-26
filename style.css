@@ -93,7 +93,8 @@ a:active {
   font-weight: 700;
 }
 #download-cv {
-  width: 200px;
+  max-width: 200px;
+  width: auto;
   height: 40px;
   background-color: #1e7898;
   color: white;
@@ -331,7 +332,7 @@ margin: 6px 0;
   height: auto;
   text-align: left;
   padding-left: 50px;
-  padding-right: 500px;
+  padding-right: 200px;
   padding-bottom: 20px;
   color: white;
   margin : 0 auto;
@@ -345,8 +346,8 @@ margin: 6px 0;
 .text-home-page-top {
   text-align: left;
   color: white;
-  min-width: 500px;
-  max-width: 800px;
+  min-width: 200px;
+  max-width: 700px;
   width: auto;
 }
 .fa-envelope {
@@ -362,18 +363,27 @@ margin: 6px 0;
   margin-right: 10px;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
+  #download-cv {
+    width: auto;
+    height: 40px;
+    align-items: center;
+  }
   .projet-hp {
     grid-template-columns: 1fr; /* Une colonne pour les écrans plus petits */
   }
 
   .home-page-top {
-    max-width: 500px;
+    background-size: cover;
     width: auto;
-  }
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
   .text-home-page-top {
-    max-width: 500px;
-    width: auto;
+    width: 100%;
+    text-align: center;
   }
 
   .project-gauche-hp,
