@@ -66,27 +66,6 @@ a:active {
 	width: 95%;
   padding-right: 20px;
 }
-#menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: start;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 10px;
-}
-#menu li {
-  display: inline-block;
-  margin: 0 10px;
-}
-#menu li a {
-  text-decoration: none;
-  color : white;
-  padding: 10px;
-}
-#menu li a:hover {
-  color: black;
-}
 #titre-proj-u {
   text-align: start;
   font-size: 30px;
@@ -158,6 +137,55 @@ a:active {
   align-items: center;
 }
 
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+}
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.menu li a {
+  text-decoration: none;
+  color : white;
+  padding: 10px;
+}
+.menu li a:hover {
+  color: black;
+}
+
+.menu-mobile-fr {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px;
+}
+.menu-mobile-fr li {
+  padding-bottom: 15px;
+}
+.menu-mobile-fr li a {
+  text-decoration: none;
+  color : white;
+  padding: 10px;
+}
+.menu-mobile-fr li a:hover {
+  color: black;
+}
+.menu-mobile-fr hr {
+  color: white;
+  width: 100%;
+  height: 2px; 
+  padding: 10px;
+}
+
 .sidenav {
 height: 100%;
 width: 300px;
@@ -172,6 +200,9 @@ padding-left: 20px;
 padding-right: 20px;
 padding-top: 50px;
 }
+.sidenav h2{
+  font-weight: bold;
+}
 /* Active class */
 .sidenav.active {
 left: 0;
@@ -183,6 +214,7 @@ position: absolute;
 top: 0;
 right: 25px;
 font-size: 36px;
+color: white;
 }
 
 /* Icône burger */
@@ -220,7 +252,7 @@ margin: 6px 0;
     color : #6f6df7;
 }
 .github-logo{
-  color : black;
+  color : white;
 }
 .projets-uni h2 {
   color : #6f6df7;
@@ -358,19 +390,39 @@ margin: 6px 0;
 }
 .fab.fa-linkedin {
   margin-right: 10px;
+  color: white;
 }
 .fab.fa-github {
   margin-right: 10px;
+  color:white;
 }
 
 @media only screen and (max-width: 900px) {
   #download-cv {
-    width: auto;
+    width: 200px;
     height: 40px;
     align-items: center;
   }
+  #content-hp {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
   .projet-hp {
     grid-template-columns: 1fr; /* Une colonne pour les écrans plus petits */
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0px solid #000;
+    max-width: 100%;
+    width: auto;
+    margin-top: 0px;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .home-page-top {
@@ -383,11 +435,64 @@ margin: 6px 0;
     }
   .text-home-page-top {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
 
-  .project-gauche-hp,
-  .project-droite-hp {
-    width: 100%; /* Largeur de 100% pour occuper toute la largeur de la fenêtre */
+  .project-gauche-hp {
+    padding: 0px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    align-content: center;
+    width: auto;
+    max-height: 200px;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
+
+  .image-projet-hp {
+    height: 200px;
+  }
+
+  .project-droite-hp {
+    text-align: center;
+    padding: 20px;
+    max-height: 200px;
+    height: auto;
+    max-width: 350px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+  width: 100%;
+  text-align: center;
+  }
+
+  .menu p {
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    font-family: "American Typewriter", serif;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+  }
+
+  .sidenav {
+    background-color: #033357;
+  }
+  .sidenav li{
+    font-size: 20px;
+  }
+  .sidenav li a:hover {
+  color: black;
+}
 }
