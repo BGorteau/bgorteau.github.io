@@ -34,6 +34,24 @@ checkScreenWidth();
 // Check on window resize
 window.addEventListener('resize', checkScreenWidth);
 
+/* -------------------------- FR - Bar de menu dynamique bis -----------------------------------*/
+
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        // Si le défilement est vers le haut, afficher la barre de menu
+        document.getElementById("dynamic-menu-fr").classList.remove("hidden");
+    } else {
+        // Si le défilement est vers le bas, masquer la barre de menu
+        document.getElementById("dynamic-menu-fr").classList.add("hidden");
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+
 /* -------------------------- FR - Texte page d'accueil dynamique ------------------------------*/
 
 function checkScreenWidthHomeDesc() {
