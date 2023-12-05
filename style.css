@@ -335,8 +335,8 @@ margin: 6px 0;
   width: 300px;
 }
 .image-projet-hp {
-  height: 200px;
-  width: 350px;
+  width: 100%;
+  align-items: center;
 }
 .CV {
   padding: 20px;
@@ -384,8 +384,10 @@ margin: 6px 0;
   text-align: left;
   color: white;
   min-width: 200px;
-  max-width: 700px;
+  max-width: 750px;
   width: auto;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 .fa-envelope {
   margin-right: 10px;
@@ -513,10 +515,10 @@ margin: 6px 0;
   }
 
   .image-projet-hp {
-    height: 200px;
+    width:100%;
   }
   .image-projet {
-    height: 100%;
+    width: 100%;
   }
 
   .project-droite-hp {
