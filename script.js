@@ -23,7 +23,7 @@ function checkScreenWidth() {
   const dynamicContent = document.getElementById('dynamic-menu-fr');
 
   if (screenWidth <= 900) {
-    dynamicContent.innerHTML = '<center><p>Baptiste Gorteau</p></center>';
+    dynamicContent.innerHTML = '<center><a href=index.html><p>Baptiste Gorteau</p></a></center>';
   } else {
     dynamicContent.innerHTML = '<li><a href="index.html">Accueil</a></li><li><a href="fr/cv.html">CV</a></li><li><a href="fr/page-projets-ecole.html">Projets université</a></li><li><a href="fr/page-projets-perso.html">Projets personnels</a></li>';
   }

@@ -23,7 +23,7 @@ function checkScreenWidth() {
   const dynamicContent = document.getElementById('dynamic-menu');
 
   if (screenWidth <= 900) {
-    dynamicContent.innerHTML = '<center><p>Baptiste Gorteau</p></center>';
+    dynamicContent.innerHTML = '<center><a href="home.html"><p>Baptiste Gorteau</p></a></center>';
   } else {
     dynamicContent.innerHTML = '<li><a href="home.html">Home</a></li><li><a href="cv.html">CV</a></li><li><a href="university-projects.html">University projects</a></li><li><a href="personal-projects.html">Personal projects</a></li>';
   }
