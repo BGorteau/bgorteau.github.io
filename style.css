@@ -403,6 +403,9 @@ margin: 6px 0;
   margin-right: 10px;
   color:white;
 }
+.fab.fa-github-black {
+  margin-right: 10px;
+}
 
 @media only screen and (max-width: 900px) {
   #download-cv {
