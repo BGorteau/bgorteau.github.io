@@ -37,6 +37,7 @@ a:active {
   float: right;
   width: 90%;
   padding: 10px;
+  padding-top: 70px;
 }
 #content-hp {
   float: right;
@@ -49,11 +50,14 @@ a:active {
   box-sizing: border-box;
 }
 #top-page {
+  position: fixed;
+  width: 100%;
 	display: flex; 
 	align-items: center;
 	justify-content: space-between;
 	background-color: #033357;
 	height: 70px;
+  transition: top 0.3s ease;
 }
 #left-top-page {
 	width: 5%;
@@ -96,7 +100,7 @@ a:active {
   align-items: center;
 }
 #acces-button a:hover {
-  color: #033357;
+  color: #1e7898;
 }
 #contact {
   text-align: center;
@@ -140,6 +144,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 70px;
 }
 
 .menu {
@@ -351,6 +356,7 @@ margin: 6px 0;
 .CV {
   padding: 20px;
   width: 90%;
+  padding-top: 70px;
 }
 .CV h2 {
   font-size: 35px;
@@ -378,6 +384,7 @@ margin: 6px 0;
   width: auto;
   height: auto;
   text-align: left;
+  padding-top: 70px;
   padding-left: 50px;
   padding-right: 200px;
   padding-bottom: 20px;
@@ -433,6 +440,7 @@ margin: 6px 0;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    padding-top: 70px;
   }
   #content-hp {
     width: 100%;
@@ -487,6 +495,7 @@ margin: 6px 0;
     background-size: cover;
     width: auto;
     padding: 20px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
