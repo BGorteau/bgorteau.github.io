@@ -53,7 +53,6 @@ window.addEventListener('scroll', () => {
   dernierScroll = scrollActuel;
 });
 
-
 /* -------------------------- FR - Texte page d'accueil dynamique ------------------------------*/
 
 function checkScreenWidthHomeDesc() {
