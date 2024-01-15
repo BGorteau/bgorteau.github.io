@@ -42,9 +42,9 @@ function checkScreenWidthHomeDesc() {
   const dynamicContent = document.getElementById('dynamic-text-home-page-top');
 
   if (screenWidth <= 900) {
-    dynamicContent.innerHTML = "Diplômé d'un master en mathématiques appliquées et statistiques à l'Université de Rennes 2. <br>Passionné par les applications des mathématiques aux domaines du sport et de la géopolitique.<br><br><a href='pdf/CV_Baptiste Gorteau.pdf', target='_blank', download='cv-baptiste-gorteau.pdf'><div id='download-cv'>Téléchargez mon CV</div></a>";
+    dynamicContent.innerHTML = "Diplômé d'un master en mathématiques appliquées et statistiques à l'Université de Rennes 2. <br>Passionné par les applications des mathématiques aux domaines du sport et de la géopolitique.<br><br><a href='pdf/CV_Baptiste Gorteau.pdf', target='_blank', download='baptiste-gorteau-fr.pdf'><div id='download-cv'>Téléchargez mon CV</div></a>";
   } else {
-    dynamicContent.innerHTML = "<h1>BAPTISTE GORTEAU</h1><br>Diplômé d'un master en mathématiques appliquées et statistiques à l'Université de Rennes 2. <br>Passionné par les applications des mathématiques aux domaines du sport et de la géopolitique.<br><br><a href='pdf/CV_Baptiste Gorteau.pdf', target='_blank', download='cv-baptiste-gorteau.pdf'><div id='download-cv'>Téléchargez mon CV</div></a>";
+    dynamicContent.innerHTML = "<h1>BAPTISTE GORTEAU</h1><br>Diplômé d'un master en mathématiques appliquées et statistiques à l'Université de Rennes 2. <br>Passionné par les applications des mathématiques aux domaines du sport et de la géopolitique.<br><br><a href='pdf/baptiste-gorteau-fr.pdf', target='_blank', download='cv-baptiste-gorteau.pdf'><div id='download-cv'>Téléchargez mon CV</div></a>";
     }
 }
 

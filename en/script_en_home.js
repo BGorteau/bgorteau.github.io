@@ -41,9 +41,9 @@ function checkScreenWidthHomeDesc() {
   const dynamicContent = document.getElementById('dynamic-text-home-page-top');
 
   if (screenWidth <= 900) {
-    dynamicContent.innerHTML = "Master's degree in applied mathematics and statistics from the University of Rennes 2.<br>Passionate about the application of mathematics to sport and geopolitics.<br><br><a href='../pdf/CV_Baptiste Gorteau.pdf', target='_blank', download='cv-baptiste-gorteau.pdf'><div id='download-cv'>Download my CV</div></a>";
+    dynamicContent.innerHTML = "Master's degree in applied mathematics and statistics from the University of Rennes 2.<br>Passionate about the application of mathematics to sport and geopolitics.<br><br><a href='../pdf/baptiste-gorteau-en.pdf', target='_blank', download='cv-baptiste-gorteau.pdf'><div id='download-cv'>Download my CV</div></a>";
   } else {
-    dynamicContent.innerHTML = "<h1>BAPTISTE GORTEAU</h1><br>Master's degree in applied mathematics and statistics from the University of Rennes 2.<br>Passionate about the application of mathematics to sport and geopolitics.<br><br><a href='../pdf/CV_Baptiste Gorteau.pdf', target='_blank', download='cv-baptiste-gorteau.pdf'><div id='download-cv'>Download my CV</div></a>";
+    dynamicContent.innerHTML = "<h1>BAPTISTE GORTEAU</h1><br>Master's degree in applied mathematics and statistics from the University of Rennes 2.<br>Passionate about the application of mathematics to sport and geopolitics.<br><br><a href='../pdf/baptiste-gorteau-en.pdf', target='_blank', download='cv-baptiste-gorteau.pdf'><div id='download-cv'>Download my CV</div></a>";
     }
 }
 
