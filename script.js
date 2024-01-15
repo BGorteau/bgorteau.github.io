@@ -34,24 +34,6 @@ checkScreenWidth();
 // Check on window resize
 window.addEventListener('resize', checkScreenWidth);
 
-/* -------------------------- FR - Bar de menu dynamique bis -----------------------------------*/
-
-let dernierScroll = 0;
-const barreMenu = document.getElementById('top-page');
-
-window.addEventListener('scroll', () => {
-  const scrollActuel = window.scrollY;
-
-  if (scrollActuel > dernierScroll) {
-    // Faites défiler vers le bas
-    barreMenu.style.top = `-${barreMenu.offsetHeight}px`;
-  } else {
-    // Faites défiler vers le haut
-    barreMenu.style.top = '0';
-  }
-
-  dernierScroll = scrollActuel;
-});
 
 /* -------------------------- FR - Texte page d'accueil dynamique ------------------------------*/
 

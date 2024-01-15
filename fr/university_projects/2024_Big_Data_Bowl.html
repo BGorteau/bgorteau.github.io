@@ -40,7 +40,7 @@
 </a>
 </div>
 <div id="right-top-page">
-<ul ,="" class="menu" id="dynamic-menu-fr">
+<ul class="menu", id="dynamic-menu-fr">
 <li><a href="../../index.html">Accueil</a></li>
 <li><a href="../cv.html">CV</a></li>
 <li><a href="../page-projets-ecole.html">Projets université</a></li>
@@ -53,6 +53,7 @@
 </div>
 <div id="projet-container">
 <div id="projet-content">
+
 <!DOCTYPE html>
 
 <html>
@@ -12136,7 +12137,6 @@ span.CodeMirror-selectedtext { background: none; }
 .CodeMirror.cm-s-jupyter {
   background: var(--jp-layout-color0);
   color: var(--jp-content-font-color1);
-  overflow-x: auto;
 }
 
 /* In the notebook, we want this styling to be handled by its container */
@@ -14622,8 +14622,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p style="text-align:center; font-size: 30px; font-weight:bold">Evaluating tackling position at catching moment</p>
 </div>
 </div>
@@ -14633,8 +14632,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Introduction-and-explanation-of-the-idea">Introduction and explanation of the idea<a class="anchor-link" href="#Introduction-and-explanation-of-the-idea">¶</a></h1>
 </div>
 </div>
@@ -14644,8 +14642,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>In the NFL, the objective of the defense is to give as few yards as possible to the opposing team. To achieve this, the defense must be optimally positioned to tackle the ball carrier as quickly as possible. Starting from this premise, we're going to attempt to create a metric that will enable us to evaluate the position of defenders to make a potential tackle when the ball carrier catches the ball. To achieve this, we will use the data provided as part of the <a href="https://www.kaggle.com/competitions/nfl-big-data-bowl-2024/data">"NFL Big Data Bowl 2024"</a>.</p>
 <p>To guide us in our work, we have focused on two essential elements in making a tackle:</p>
 <ul>
@@ -14663,8 +14660,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Create-the-metric">Create the metric<a class="anchor-link" href="#Create-the-metric">¶</a></h1>
 </div>
 </div>
@@ -14674,8 +14670,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Player-information">Player information<a class="anchor-link" href="#Player-information">¶</a></h2>
 </div>
 </div>
@@ -14685,8 +14680,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>To create our metric, we will need several pieces of information about each player on the field at the catching moment $Cm$. First, we'll need some basic information, then we'll create a new variable using information from the dataframes.</p>
 <h3 id="Basic-information">Basic information<a class="anchor-link" href="#Basic-information">¶</a></h3><p>Here is the first information we will need:</p>
 <ul>
@@ -14714,9 +14708,8 @@ $$\overrightarrow{d_p} = (x_{Cm+1}^{p} - x_{Cm}^{p}, y_{Cm+1}^{p} - y_{Cm}^{p})$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img height="60%" src="representations/players_directions.png" width="60%"/></p>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img height="100%" src="representations/players_directions.png" width="100%"/></p>
 </div>
 </div>
 </div>
@@ -14725,8 +14718,7 @@ $$\overrightarrow{d_p} = (x_{Cm+1}^{p} - x_{Cm}^{p}, y_{Cm+1}^{p} - y_{Cm}^{p})$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Now that we have all the variables we need for each player, we can start creating our metric.</p>
 </div>
 </div>
@@ -14736,8 +14728,7 @@ $$\overrightarrow{d_p} = (x_{Cm+1}^{p} - x_{Cm}^{p}, y_{Cm+1}^{p} - y_{Cm}^{p})$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
 </div>
 </div>
@@ -14747,8 +14738,7 @@ $$\overrightarrow{d_p} = (x_{Cm+1}^{p} - x_{Cm}^{p}, y_{Cm+1}^{p} - y_{Cm}^{p})$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="%22Tackler---Offense-players%22-$(TOP)$-metric">"Tackler - Offense players" $(TOP)$ metric<a class="anchor-link" href="#%22Tackler---Offense-players%22-$(TOP)$-metric">¶</a></h2>
 </div>
 </div>
@@ -14758,8 +14748,7 @@ $$\overrightarrow{d_p} = (x_{Cm+1}^{p} - x_{Cm}^{p}, y_{Cm+1}^{p} - y_{Cm}^{p})$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>We start by computing the "Tackler - Offense players" metric. For this metric, we need to define the at-risk offense players for the potential tackler. To select these players, we'll perform two filtering steps.</p>
 </div>
 </div>
@@ -14769,8 +14758,7 @@ $$\overrightarrow{d_p} = (x_{Cm+1}^{p} - x_{Cm}^{p}, y_{Cm+1}^{p} - y_{Cm}^{p})$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="First-step-in-filtering-at-risk-offense-players">First step in filtering at-risk offense players<a class="anchor-link" href="#First-step-in-filtering-at-risk-offense-players">¶</a></h3>
 </div>
 </div>
@@ -14780,8 +14768,7 @@ $$\overrightarrow{d_p} = (x_{Cm+1}^{p} - x_{Cm}^{p}, y_{Cm+1}^{p} - y_{Cm}^{p})$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The first step is to keep offensive players at a distance from the potential tackler. Because we look at the action on the short term, we decide to keep the offense players that are positioned less than five yards around the ball carrier and five yards around the potential tackler.</p>
 <p>Let $(x_{Cm}^T, y_{Cm}^T)$ be the coordinates of the potential tackler $T$ at $Cm$ and $(x_{Cm}^{O}, y_{Cm}^O)$ the coordinates of the offensive player $O$ at $Cm$. The offensive player is considered "at-risk" if :</p>
 $$\sqrt{(x_{Cm}^T - x_{Cm}^{O})^2 + (y_{Cm}^T - y_{Cm}^{O})^2} &lt; 5$$
@@ -14793,9 +14780,8 @@ $$\sqrt{(x_{Cm}^T - x_{Cm}^{O})^2 + (y_{Cm}^T - y_{Cm}^{O})^2} &lt; 5$$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img height="60%" src="representations/at_risk_players.png" width="60%"/></p>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img height="100%" src="representations/at_risk_players.png" width="100%"/></p>
 </div>
 </div>
 </div>
@@ -14804,8 +14790,7 @@ $$\sqrt{(x_{Cm}^T - x_{Cm}^{O})^2 + (y_{Cm}^T - y_{Cm}^{O})^2} &lt; 5$$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Second-step-in-filtering-at-risk-offense-players">Second step in filtering at-risk offense players<a class="anchor-link" href="#Second-step-in-filtering-at-risk-offense-players">¶</a></h3>
 </div>
 </div>
@@ -14815,8 +14800,7 @@ $$\sqrt{(x_{Cm}^T - x_{Cm}^{O})^2 + (y_{Cm}^T - y_{Cm}^{O})^2} &lt; 5$$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>After this first step, we filter the at-risk offensive players a second time, keeping only those whose trajectory can meet that of the potential tackler. Here are the steps that will allow us to determine whether the trajectories of the two players can meet or not:</p>
 <ol>
 <li><p style="font-weight:bold">Define the parametric equations of the half-lines of the two players:</p><br/>
@@ -14862,10 +14846,9 @@ $$\sqrt{(x_{Cm}^T - x_{Cm}^{O})^2 + (y_{Cm}^T - y_{Cm}^{O})^2} &lt; 5$$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a name="schema-crossing"></a>
-<img height="90%" src="representations/draw_ARP.png" width="90%"/></p>
+<img height="100%" src="representations/draw_ARP.png" width="100%"/></p>
 </div>
 </div>
 </div>
@@ -14874,8 +14857,7 @@ $$\sqrt{(x_{Cm}^T - x_{Cm}^{O})^2 + (y_{Cm}^T - y_{Cm}^{O})^2} &lt; 5$$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Define-elements-and-create-the-$TOP$-metric">Define elements and create the $TOP$ metric<a class="anchor-link" href="#Define-elements-and-create-the-$TOP$-metric">¶</a></h3>
 </div>
 </div>
@@ -14885,8 +14867,7 @@ $$\sqrt{(x_{Cm}^T - x_{Cm}^{O})^2 + (y_{Cm}^T - y_{Cm}^{O})^2} &lt; 5$$
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>When we have our final list of $n_{ARP}$ at-rsik offense players, we define the elements that we're going to need for the metric.</p>
 <ul>
 <li><strong>The distance between the potential tackler $T$ and the at-risk offense player $k$, $ARP_k$, at $Cm$:</strong></li>
@@ -14915,8 +14896,7 @@ $$ TOP_T = \sum_{k=1}^{n_{ARP}} \frac{\left(\max(0,\Delta S_{(T, ARP_k)}) + \max
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
 </div>
 </div>
@@ -14926,8 +14906,7 @@ $$ TOP_T = \sum_{k=1}^{n_{ARP}} \frac{\left(\max(0,\Delta S_{(T, ARP_k)}) + \max
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="%22Tackler---Ball-Carrier%22-$(TBC)$-metric">"Tackler - Ball Carrier" $(TBC)$ metric<a class="anchor-link" href="#%22Tackler---Ball-Carrier%22-$(TBC)$-metric">¶</a></h2>
 </div>
 </div>
@@ -14937,8 +14916,7 @@ $$ TOP_T = \sum_{k=1}^{n_{ARP}} \frac{\left(\max(0,\Delta S_{(T, ARP_k)}) + \max
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>We now compute the "Tackler - Ball Carrier" ($TBC$) metric. For this metric, the directions of the potential tackler $T$ and the ball carrier $Bc$ will have an importance. We define a constant $c$ that is equal to 1 if the players' directions cross and 0 if not as we saw on <a href="#schema-crossing">representation</a> earlier.</p>
 <p>We define two variables related to the angle :</p>
 <ul>
@@ -14983,8 +14961,7 @@ $$ TBC_T = \exp{\left(\frac{D_{(T, Bc)}}{3}\right)} + \max\left(0, \Delta S_{(T,
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Compute-the-final-metric-:-the-%22Tackling-position-score%22-$(TPS)$">Compute the final metric : the "Tackling position score" $(TPS)$<a class="anchor-link" href="#Compute-the-final-metric-:-the-%22Tackling-position-score%22-$(TPS)$">¶</a></h2>
 </div>
 </div>
@@ -14994,8 +14971,7 @@ $$ TBC_T = \exp{\left(\frac{D_{(T, Bc)}}{3}\right)} + \max\left(0, \Delta S_{(T,
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The final score for the potential tackler $T$ correspond to the sum of "Tackler - Offense players" metric and the "tackler - Ball Carrier" metric. We call this score the "Tacking position score" ($TPS_T$). Because of the high score we can have, we fix the score limt to 100.</p>
 $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 </div>
@@ -15006,8 +14982,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="How-relevant-is-our-metric-?">How relevant is our metric ?<a class="anchor-link" href="#How-relevant-is-our-metric-?">¶</a></h1>
 </div>
 </div>
@@ -15017,8 +14992,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>To check whether our metric is relevant, we'll look at player scores on a sample of 1000 tackles from the <em>tackle</em> dataframe. We consider our metric to be relevant if 2/3 or more of the players have a score below 100.</p>
 </div>
 </div>
@@ -15028,9 +15002,8 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img height="70%" src="representations/TPS_distribution.png" width="70%"/></p>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img height="100%" src="representations/TPS_distribution.png" width="100%"/></p>
 </div>
 </div>
 </div>
@@ -15039,8 +15012,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>In this sample, the number of successful and missed tackles with a $TPS$ of less than 100 is 683. This means that 68.3% of the tackles in our sample have a score below 100, confirming that our metric can be relevant.</p>
 </div>
 </div>
@@ -15050,8 +15022,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Another thing we can do is look at the yards gained after catching the ball in relation to the scores for tackles with a $TPS$ of less than 100, and tackles with a $TPS$ of 100.</p>
 </div>
 </div>
@@ -15061,9 +15032,8 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img height="70%" src="representations/YAR_distribution.png" width="70%"/></p>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img height="100%" src="representations/YAR_distribution.png" width="100%"/></p>
 </div>
 </div>
 </div>
@@ -15072,8 +15042,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>On this graph, we can see a high concentration of tackles with a $TPS$ of less than 100 between 0 and 8 yards. As for tackles with a $TPS$ equal to 100, their distribution is more spread out, with an average of around 8 yards. This representation confirms the relevance of our metric.</p>
 <hr/>
 </div>
@@ -15084,8 +15053,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Vizualize-the-players-score-on-the-play">Vizualize the players score on the play<a class="anchor-link" href="#Vizualize-the-players-score-on-the-play">¶</a></h1>
 </div>
 </div>
@@ -15095,8 +15063,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>To better understand the importance of our metric, we can represent the score for each player on the action. What we do is look at each player's score at $Cm$.</p>
 </div>
 </div>
@@ -15106,9 +15073,8 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img height="70%" src="representations/ball_catching.png" width="70%"/></p>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img height="100%" src="representations/ball_catching.png" width="100%"/></p>
 </div>
 </div>
 </div>
@@ -15117,8 +15083,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
 </div>
 </div>
@@ -15128,8 +15093,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Who-are-the-best-tacklers-on-short-term-?">Who are the best tacklers on short term ?<a class="anchor-link" href="#Who-are-the-best-tacklers-on-short-term-?">¶</a></h1>
 </div>
 </div>
@@ -15139,8 +15103,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>In this final section, we'll take a look at which defensive players make tackles in the best positions (with the best $TPS$). Because they are positioned so close to the attacking players, we decided to create a special ranking for cornerbacks and a second ranking for the other positions. Here are the results.</p>
 </div>
 </div>
@@ -15150,8 +15113,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><img height="100%" src="representations/rankings.png" width="100%"/></p>
 <hr/>
 </div>
@@ -15162,8 +15124,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a></h1>
 </div>
 </div>
@@ -15173,8 +15134,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>To conclude, we have succeeded in creating a metric that allows us to better observe one aspect of the game: the moment when the ball carrier takes possession of the ball. This metric, which we have called the TPS, is based on the short term and can be used to award the fewest yards to the opposing team as quickly as possible. We could then try to make this metric more efficient using new data and artificial intelligence techniques.</p>
 </div>
 </div>
@@ -15184,8 +15144,7 @@ $$ TPS_T  = \min(TOP_T + TBC_T, 100) $$<hr/>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Code available on <a href="https://github.com/BGorteau/NFL_Big_Data_Bowl_2024">GitHub</a></p>
 </div>
 </div>
