@@ -156,7 +156,6 @@ header nav a:hover {
 #presentation {
   display: flex;
   gap: 50px;
-  margin-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -273,7 +272,6 @@ header nav a:hover {
 /* =================================================== */
 
 #projects {
-  border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   padding-top: 10px;
   padding-bottom: 20px;
