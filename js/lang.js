@@ -4,6 +4,10 @@ const translations = {
   // ================================================
 
   fr: {
+    // ============ MENU ============
+    home_title: "Accueil",
+    about_title: "À propos",
+    projects_title: "Projets",
 
     // ============ MENU ============
     home_menu: "Accueil",
@@ -18,7 +22,7 @@ const translations = {
     mobile_language: "Langue",
 
     // ============ PRESENTATION ============
-    presentation_h4: "Consultant data",
+    presentation_h4: "Data Scientist",
     presentation_text: "Diplômé d'un master en mathématiques appliquées et statistiques de l'université Rennes 2, je bénéficie de trois années d'expérience professionnelle dans le domaine de la data. Je possède également un intérêt marqué pour l’analyse de données dans les domaines du sport et de la géopolitique. Je suis ouvert à toute collaboration ou discussion constructive. N'hésitez pas à me contacter.",
     pres_download_cv: "Télécharger mon CV",
     
@@ -109,6 +113,10 @@ const translations = {
   // ==================== ENGLISH ===================
   // ================================================
   en: {
+    // ============ MENU ============
+    home_title: "Home",
+    about_title: "About",
+    projects_title: "Projects",
 
     // ============ MENU ============
     home_menu: "Home",
@@ -123,7 +131,7 @@ const translations = {
     mobile_language: "Language",
 
     // ============ PRESENTATION ============
-    presentation_h4: "Data consultant",
+    presentation_h4: "Data Scientist",
     presentation_text: "I hold a Master’s degree in Applied Mathematics and Statistics from Rennes 2 University, and I bring three years of professional experience in the data field. I also have a keen interest in data analysis in the fields of sports and geopolitics. I am open to any collaboration or constructive discussion. Please do not hesitate to contact me.",
     pres_download_cv: "Download CV",
 

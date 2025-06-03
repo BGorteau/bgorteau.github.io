@@ -3,12 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <title id="home_title"></title>
   <link rel="icon" href="images/Favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href='style.css'>
 </head>
@@ -26,7 +21,7 @@
           <a id="home_mobile_menu" href="index.html"></a>
           <a id="about_mobile_menu" href="about.html"></a>
           <a id="projects_mobile_menu" href="projects.html"></a>
-          <p id="mobile_menu_contact_title">Contact</p>
+          <p id="mobile_menu_contact_title">Contacts</p>
           <div id="contact-element">
             <img src="images/loc.svg" alt="localisation">
             <div>Montréal QC, Canada</div>
@@ -53,13 +48,6 @@
         <a id="home_menu" href="index.html"></a>
         <!-- ============= OPEN AND HIDE 'ABOUT' ============= -->
         <a id="about_menu" href="about.html"></a>
-        <!-- <a id="open-about" target="_blank">About</a>
-        <div class="about-overlay" id="about-overlay">
-          <div class="about-modal" id="about-modal">
-            <span class="about-close-btn" id="about-closeBtn">&times;</span>
-            <p>Voici le contenu de la fenêtre modale.</p>
-          </div>
-        </div> -->
         <a id="projects_menu" href="projects.html"></a>
         <!-- ============= OPEN AND HIDE CONTACT ============= -->
         <a id="open_contact" target="_blank"></a>
@@ -129,52 +117,6 @@
       <img id="pres-img-std" src="images/photo_BGO.jpg" alt="Photo profil">
     </div>
 
-    <!-- ============= SKILLS ============= -->
-
-    <div id="skills">
-      <h2 id="skills_h2"></h2>
-      <div id="skills-tech-pers">
-        <a onclick="change_skills('tech')" class="click-skills" target="_blank"><u id="tech_skills"></u></a>
-        <a onclick="change_skills('pers')" class="click-skills" target="_blank"><u id="pers_skills"></u></a>
-      </div>
-      <div id="skills-text"
-       data-skill-tech='
-          <div class="skill">Python</div> 
-          <div class="skill">R</div> 
-          <div class="skill">SQL</div> 
-          <div class="skill">Web Scrapping</div>
-          <div class="skill">HTML</div>
-          <div class="skill">Statistics</div>
-          <div class="skill">Machine Learning</div>
-          <div class="skill">Data Visualization</div>
-          <div class="skill">Data Extraction</div>
-          <div class="skill">Data Transformation</div>'
-       data-skill-pers='
-          <div class="skill">Curious</div> 
-          <div class="skill">Sociable</div> 
-          <div class="skill">Worker</div> 
-          <div class="skill">Problem Solving</div>'>
-        <div class="skill">Python</div> 
-        <div class="skill">R</div> 
-        <div class="skill">SQL</div> 
-        <div class="skill">Web Scrapping</div>
-        <div class="skill">HTML</div>
-        <div class="skill">Statistics</div>
-        <div class="skill">Machine Learning</div>
-        <div class="skill">Data Visualization</div>
-        <div class="skill">Data Extraction</div>
-        <div class="skill">Data Transformation</div>  
-      </div>
-      <div id="skills-button">
-        <a href="pdf/baptiste-gorteau-fr.pdf", target="_blank", download="cv-baptiste-gorteau.pdf">
-          <div id="skills_know_more" class="black-button"></div>
-        </a>
-        <a href="projects.html">
-          <div id="skills_see_projects" class="white-button"></div>
-        </a>
-      </div>
-    </div>
-
     <!-- ============= PROJECTS ============= -->
 
     <div id="projects">
@@ -222,6 +164,7 @@
             <p id="proj_3_desc"></p>
           </div>
         </div>
+        <!-- =========== DISPLAY MORE PROJECTS =========== -->
         <div id="display-more-projects" style="display: none;">
           <!-- =========== PROJECT NUMBER 4 =========== -->
           <div id="project-presentation">
@@ -266,6 +209,52 @@
       </div>
       <div id="projects-dropdown">
         <a id="dropdown_button" onclick="toggleProjects()", target="_blank"></a>
+      </div>
+    </div>
+
+    <!-- ============= SKILLS ============= -->
+
+    <div id="skills">
+      <h2 id="skills_h2"></h2>
+      <div id="skills-tech-pers">
+        <a onclick="change_skills('tech')" class="click-skills" target="_blank"><u id="tech_skills"></u></a>
+        <a onclick="change_skills('pers')" class="click-skills" target="_blank"><u id="pers_skills"></u></a>
+      </div>
+      <div id="skills-text"
+       data-skill-tech='
+          <div class="skill">Python</div> 
+          <div class="skill">R</div> 
+          <div class="skill">SQL</div> 
+          <div class="skill">Web Scrapping</div>
+          <div class="skill">HTML</div>
+          <div class="skill">Statistics</div>
+          <div class="skill">Machine Learning</div>
+          <div class="skill">Data Visualization</div>
+          <div class="skill">Data Extraction</div>
+          <div class="skill">Data Transformation</div>'
+       data-skill-pers='
+          <div class="skill">Curious</div> 
+          <div class="skill">Sociable</div> 
+          <div class="skill">Worker</div> 
+          <div class="skill">Problem Solving</div>'>
+        <div class="skill">Python</div> 
+        <div class="skill">R</div> 
+        <div class="skill">SQL</div> 
+        <div class="skill">Web Scrapping</div>
+        <div class="skill">HTML</div>
+        <div class="skill">Statistics</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Data Extraction</div>
+        <div class="skill">Data Transformation</div>  
+      </div>
+      <div id="skills-button">
+        <a href="pdf/baptiste-gorteau-fr.pdf", target="_blank", download="cv-baptiste-gorteau.pdf">
+          <div id="skills_know_more" class="black-button"></div>
+        </a>
+        <a href="projects.html">
+          <div id="skills_see_projects" class="white-button"></div>
+        </a>
       </div>
     </div>
 
