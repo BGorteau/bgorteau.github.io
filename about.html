@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" href="images/Favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href='style.css'>
+
+</head>
+<body id="body">
+
+  <!-- ============= HEADER ============= -->
+  <header id="header">
+    <a id="open-mobile-menu" target="_blank">
+      <img id="menu-icon" src="images/menu_icon.png">
+    </a>
+    <div class="menu-overlay" id="menu-overlay">
+      <div class="menu-modal" id="menu-modal">
+        <span class="menu-close-btn" id="menu-closeBtn">&times;</span>
+        <div id="mobile-menu">
+          <a id="home_mobile_menu" href="index.html"></a>
+          <a id="about_mobile_menu" href="about.html"></a>
+          <a id="projects_mobile_menu" href="projects.html"></a>
+          <p id="mobile_menu_contact_title">Contact</p>
+          <div id="contact-element">
+            <img src="images/loc.svg" alt="localisation">
+            <div>Montréal QC, Canada</div>
+          </div>
+          <!-- ============= PHONE ============= -->
+          <div id="contact-element">
+            <img src="images/phone.svg" alt="phone">
+            <div>+33783478728</div>
+          </div>
+          <!-- ============= E-MAIL ============= -->
+          <div id="contact-element">
+            <img src="images/e-mail.svg" alt="e-mail">
+            <div>baptiste.gorteau@gmail.com</div>
+          </div>
+          <div id="contact_networks">
+            <a id="links_networks_black" href="https://github.com/BGorteau" target="_blank"><p class="fab fa-github" style='font-size:30px'></p></a>
+            <a id="links_networks_black" href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/" target="_blank"><p class="fab fa-linkedin" style='font-size:30px'></p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>BAPTISTE GORTEAU</h1>
+      <nav>
+        <a id="home_menu" href="index.html"></a>
+        <!-- ============= OPEN AND HIDE 'ABOUT' ============= -->
+        <a id="about_menu" href="about.html"></a>
+        <!-- <a id="open-about" target="_blank">About</a>
+        <div class="about-overlay" id="about-overlay">
+          <div class="about-modal" id="about-modal">
+            <span class="about-close-btn" id="about-closeBtn">&times;</span>
+            <p>Voici le contenu de la fenêtre modale.</p>
+          </div>
+        </div> -->
+        <a id="projects_menu" href="projects.html"></a>
+        <!-- ============= OPEN AND HIDE CONTACT ============= -->
+        <a id="open_contact" target="_blank"></a>
+        <div class="contact-overlay" id="contact-overlay">
+          <div class="contact-modal" id="contact-modal">
+            <span class="contact-close-btn" id="contact-closeBtn">&times;</span>
+            <div id="open_contact_box">
+              <!-- ============= LOCATION ============= -->
+              <div id="contact-element">
+                <img src="images/loc.svg" alt="localisation">
+                <div>Montréal QC, Canada</div>
+              </div>
+              <!-- ============= PHONE ============= -->
+              <div id="contact-element">
+                <img src="images/phone.svg" alt="phone">
+                <div>+33783478728</div>
+              </div>
+              <!-- ============= E-MAIL ============= -->
+              <div id="contact-element">
+                <img src="images/e-mail.svg" alt="e-mail">
+                baptiste.gorteau@gmail.com
+              </div>
+              <div id="contact_networks">
+                <a id="links_networks_black" href="https://github.com/BGorteau" target="_blank"><p class="fab fa-github" style='font-size:30px'></p></a>
+                <a id="links_networks_black" href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/" target="_blank"><p class="fab fa-linkedin" style='font-size:30px'></p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============= CHANGE LANGUAGE (EN/FR) ============= -->
+        <div id="change-language">
+          <img src="images/planet.svg" alt="language">
+          <a id="language_toggle"></a>
+        </div>
+      </nav>
+    <a id="open-language" target="_blank">
+      <img id="language-icon" src="images/planet.svg">
+    </a>
+    <div class="language-overlay" id="language-overlay">
+      <div class="language-modal" id="language-modal">
+        <span class="language-close-btn" id="language-closeBtn">&times;</span>
+          <p id="mobile_language"></p>
+          <a id="item_language_menu" href="index.html"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============= PAGE BODY ============= -->
+
+  <div id="page-body">
+    <!-- === TITLE === -->
+    <h1>Baptiste Gorteau</h1>
+    <!-- === PRESENTATION === -->
+    <div id="about-presentation">
+      <h2 id="about_pres_h2"></h2>
+      <div id="about_presentation_text"></div>
+    </div>
+    <!-- === EXPERIENCE === -->
+<!--     <h1 id="greeting"></h1>
+    <p id="description"></p>
+    <button id="language-toggle">English</button> -->
+    <div id="about-experience">
+      <h2 id="about_experience_h2"></h2>
+      <div id="about-list-experience">
+        <!-- === UNESCO === -->
+        <div id="about-experience-description">
+          <h3>UNESCO GEM Report</h3>
+          <a id="unesco_gem_link" href="https://gem-report-2023.unesco.org/" target="_blank">
+            <img src="images/UNESCO_logo.png">
+          </a>
+          <div id="about_exp_1_date" class="about-experience-description-date"></div>
+          <div id="about_exp_1_desc" class="about-experience-description-text"></div>
+        </div>
+        <!-- === CAPGEMINI === -->
+        <div id="about-experience-description">
+          <h3>CAPGEMINI T.S.</h3>
+          <a id="capgemini_link" href="https://www.capgemini.com/" target="_blank">
+            <img src="images/Capgemini_logo.png">
+          </a>
+          <div id="about_exp_2_date" class="about-experience-description-date"></div>
+          <div id="about_exp_2_desc" class="about-experience-description-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- === EDUCATION === -->
+    <div id="about-education">
+      <h2 id="about_education_h2"></h2>
+      <div id="about-list-education">
+        <div id="about-education-description">
+          <h3 id="about_education_1_h3"></h3>
+          <a id="rennes2_link" href="https://international.univ-rennes2.fr/" target="_blank">
+            <img src="images/Rennes2_logo.png">
+          </a>
+          <h4 id="about_education_1_h4"></h4>
+        </div>
+        <div id="about-education-description">
+          <h3 id="about_education_2_h3"></h3>
+          <a id="rennes2_link" href="https://international.univ-rennes2.fr/" target="_blank">
+            <img src="images/Rennes2_logo.png">
+          </a>
+          <h4 id="about_education_2_h4"></h4>
+        </div>
+    </div>
+    </div>
+
+    <!-- === SKILLS === -->
+
+    <div id="about-skills">
+      <h2 id="skills_h2"></h2>
+      <div id="about-list-skills">
+
+        <a href="https://www.python.org/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/Python_logo.png">
+          <h4>Python</h4>
+        </div>
+        </a>
+
+        <a href="https://www.r-project.org/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/R_logo.png">
+          <h4>R</h4>
+        </div>
+
+        <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/SQL_logo.png">
+          <h4>SQL</h4>
+        </div>
+        </a>
+
+        <a href="https://numpy.org/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/Numpy_logo.png">
+          <h4>Numpy</h4>
+        </div>
+        </a>
+
+        <a href="https://pandas.pydata.org/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/Pandas_logo.png">
+          <h4>Pandas</h4>
+        </div>
+        </a>
+
+        <a href="https://pypi.org/project/beautifulsoup4/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/BeautifulSoup_logo.png">
+          <h4>Beautifulsoup</h4>
+        </div>
+        </a>
+
+        <a href="https://www.selenium.dev/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/Selenium_logo.png">
+          <h4>Selenium</h4>
+        </div>
+        </a>
+
+        <a href="https://scikit-learn.org/stable/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/SKlearn_logo.png">
+          <h4>Scikit Learn</h4>
+        </div>
+        </a>
+
+        <a href="https://www.tensorflow.org/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/TSflow_logo.png">
+          <h4>TensorFlow</h4>
+        </div>
+        </a>
+
+        <a href="https://matplotlib.org/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/Matplotlib_logo.png">
+          <h4>Matplotlib</h4>
+        </div>
+        </a>
+
+        <a href="https://shiny.posit.co/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/RShiny_logo.png">
+          <h4>R Shiny</h4>
+        </div>
+        </a>
+
+        <a href="https://www.latex-project.org/" target="_blank">
+        <div id="about-skill-description">
+          <img src="images/LaTeX_logo.png">
+          <h4>LaTeX</h4>
+        </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ============= CONTACTS ============= -->
+
+    <div id="contacts">
+      <h2 id="contacts_h2"></h2>
+      <div id="sup-contacts-display">
+        <div id="contacts-display">
+          <div id="contact-element">
+            <img src="images/loc.svg" alt="localisation">
+            <div>Montréal QC, Canada</div>
+          </div>
+          <div id="contact-element">
+            <img src="images/phone.svg" alt="phone">
+            <div>+33783478728</div>
+          </div>
+          <div id="contact-element">
+            <img src="images/e-mail.svg" alt="e-mail">
+            <div>baptiste.gorteau@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============= FOOTER ============= -->
+  <footer>
+    <p id="footer_copyright"></p>
+    <div id="network_footer">
+      <div id="github_footer">
+        <a href="https://github.com/BGorteau" target="_blank">
+          <p class="fab fa-github" style='font-size:25px'></p>
+          <p>BGorteau</p>
+        </a>
+      </div>
+      <div id="linkedin_footer">
+        <a href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/" target="_blank">
+          <p class="fab fa-linkedin" style='font-size:25px'></p>
+          <p>Baptiste Gorteau</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/lang.js"></script>
+  <script src='js/script.js' defer></script>
+</body>
+</html>

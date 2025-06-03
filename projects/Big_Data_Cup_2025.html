@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2025 Big Data Cup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" href="../images/logo_bgorteau.ico" type="image/x-icon">
+  <link rel="stylesheet" href='../style.css'>
+  <script src='../script.js' defer></script>
+
+</head>
+<body id="body">
+
+  <!-- ============= HEADER ============= -->
+  <header>
+    <h1>BAPTISTE GORTEAU</h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../index.html">About</a>
+        <a href="../index.html">Services</a>
+        <a href="../index.html">Contact</a>
+        <div id="change-language">
+          <img src="../images/planet.svg" alt="language">
+          <a id="language-link" href="../index.html">French</a>
+        </div>
+      </nav>
+  </header>
+
+  <!-- ============= PAGE TOP ============= -->
+
+  <div id="top-project-page">
+    <h1>2025 Big Data Cup</h1>
+    Growing up as a soccer enthusiast, I have always been fascinated by the ballet of passes proposed by Marcelo Bielsa and Pep Guardiola’s teams, to mention only them. When I became interested in hockey, I immediately found similarities in the passing game between the two sports. The 2025 Big Data Cup [2] was for me the perfect moment to explore hockey team’s teamwork and more specifically in restricted areas.
+  </div>
+  <!-- ============= PAGE BODY ============= -->
+
+  <div id="page-body">
+
+    <h1>Team Coordination: Quantify teamwork in restricted areas in hockey.</h1>
+
+    <h2>Introduction and approach summary</h2>
+
+    In hockey and sport in general, when we think of teamwork, two terms that come up regularly are coordination and vision. From an analytical point of view, these two terms may seem complicated to emphasize. In this work, we are going to try to make these terms analyzable in a simple and comprehensible way. The analytical route I decided to take in this project is the creation of a metric. The comprehension goal that I set for myself pushed me to choose this path rather than that of machine learning, with which I was hesitant. 
+    <br>
+    For this study, we use the dataset provided by Stathletes as part of the 2025 Big Data Cup [2]. To compute our metric, we use in priority the tracking data from the dataset combined to Voronoi diagram. The Voronoi diagram is a mathematical structure that divides a space into multiple regions, where each region is associated with a specific point (called a site or generator). Every point within a region is closer to its corresponding site than to any other site. This method is used in fields like biology, mapping, video games and sport [3]. Multiple works have been made to showcase the use of Voronoi diagram in sport. We can for example cite an article from 2012 by Sofia Fonseca, Jo˜ao Milho, Bruno Travassos and Duarte Ara´ujo [1]. The tracking data presented comes from match video recordings and don’t show all the players on the rink at each frame. Because of this restriction, we decide to focus our analysis on teamwork in restricted areas. We define the restricted area as the area around the puck at every moment of the play. We will define more precisely this area in the first part of the study.
+    <br>
+    In a first section, we will explain how we create our base metric from Voronoi diagram. In a second section, we will first show how our metric can help us to have a better view of teamwork in restricted areas. Then, we will present how can we decline our base metric in two new ones to analyze teamwork. The first metric will focus on how well the teammates place themselves around the puck carrier, and the second one on how well the puck carrier finds his open teammates.
+
+    <!-- ============= CONTACTS ============= -->
+
+    <div id="contacts">
+      <h2>Contacts</h2>
+      <div id="sup-contacts-display">
+        <div id="contacts-display">
+          <div id="contact-element">
+            <img src="../images/loc.svg" alt="localisation">
+            <div>Montréal QC, Canada</div>
+          </div>
+          <div id="contact-element">
+            <img src="../images/phone.svg" alt="phone">
+            <div>+33783478728</div>
+          </div>
+          <div id="contact-element">
+            <img src="../images/e-mail.svg" alt="e-mail">
+            <p>baptiste.gorteau@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

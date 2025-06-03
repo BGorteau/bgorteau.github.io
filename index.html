@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,134 +9,312 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
-  <link rel="icon" href="images/logo_bgorteau.ico" type="image/x-icon">
+  <link rel="icon" href="images/Favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href='style.css'>
-  <script src='script.js' defer></script>
 </head>
 <body id="body">
-  <div id="top-page">
-    <div id = "left-top-page">
-      <div id="mySidenav" class="sidenav">
-        <a id="closeBtn" href="#" class="close">×</a>
-        <center>
-        <div class="image-cercle">
-            <img src="images/photo_BGO.JPG" alt="Photo profil">
-          </div>
-          <h2> Baptiste Gorteau </h2>
-          </center>
-          <div class = pres-R2>
-            Diplômé <a href="https://sites-formations.univ-rennes2.fr/master-mas/">master MAS</a> (mathématiques appliquées, statistiques) <br>
-            📍 <a href = "https://www.univ-rennes2.fr/"> Université Rennes 2 </a>
-          </div>
-          <h2>Réseaux :</h2>
-          <a class = "github-logo" href="https://github.com/BGorteau"><i class="fab fa-github" style='font-size:30px'></i></a>
-          <a class = "github-logo" href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/"><i class="fab fa-linkedin" style='font-size:30px'></i></a>
-      </div>
-      <a href="#" id="openBtn">
-        <span class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </a>
-    </div>
-    <div id = "right-top-page">
-    <ul class="menu", id="dynamic-menu-fr">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="fr/cv.html">CV</a></li>
-      <li><a href="fr/page-projets-ecole.html">Projets université</a></li>
-      <li><a href="fr/page-projets-perso.html">Projets personnels</a></li>
-    </ul>
-    <a href="en/home.html">
-      <img src="images/uk_flag.png" width="50" height="30">
+
+  <!-- ============= HEADER ============= -->
+  <header id="header">
+    <a id="open-mobile-menu" target="_blank">
+      <img id="menu-icon" src="images/menu_icon.png">
     </a>
+    <div class="menu-overlay" id="menu-overlay">
+      <div class="menu-modal" id="menu-modal">
+        <span class="menu-close-btn" id="menu-closeBtn">&times;</span>
+        <div id="mobile-menu">
+          <a id="home_mobile_menu" href="index.html"></a>
+          <a id="about_mobile_menu" href="about.html"></a>
+          <a id="projects_mobile_menu" href="projects.html"></a>
+          <p id="mobile_menu_contact_title">Contact</p>
+          <div id="contact-element">
+            <img src="images/loc.svg" alt="localisation">
+            <div>Montréal QC, Canada</div>
+          </div>
+          <!-- ============= PHONE ============= -->
+          <div id="contact-element">
+            <img src="images/phone.svg" alt="phone">
+            <div>+33783478728</div>
+          </div>
+          <!-- ============= E-MAIL ============= -->
+          <div id="contact-element">
+            <img src="images/e-mail.svg" alt="e-mail">
+            <div>baptiste.gorteau@gmail.com</div>
+          </div>
+          <div id="contact_networks">
+            <a id="links_networks_black" href="https://github.com/BGorteau" target="_blank"><p class="fab fa-github" style='font-size:30px'></p></a>
+            <a id="links_networks_black" href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/" target="_blank"><p class="fab fa-linkedin" style='font-size:30px'></p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>BAPTISTE GORTEAU</h1>
+      <nav>
+        <a id="home_menu" href="index.html"></a>
+        <!-- ============= OPEN AND HIDE 'ABOUT' ============= -->
+        <a id="about_menu" href="about.html"></a>
+        <!-- <a id="open-about" target="_blank">About</a>
+        <div class="about-overlay" id="about-overlay">
+          <div class="about-modal" id="about-modal">
+            <span class="about-close-btn" id="about-closeBtn">&times;</span>
+            <p>Voici le contenu de la fenêtre modale.</p>
+          </div>
+        </div> -->
+        <a id="projects_menu" href="projects.html"></a>
+        <!-- ============= OPEN AND HIDE CONTACT ============= -->
+        <a id="open_contact" target="_blank"></a>
+        <div class="contact-overlay" id="contact-overlay">
+          <div class="contact-modal" id="contact-modal">
+            <span class="contact-close-btn" id="contact-closeBtn">&times;</span>
+            <div id="open_contact_box">
+              <!-- ============= LOCATION ============= -->
+              <div id="contact-element">
+                <img src="images/loc.svg" alt="localisation">
+                <div>Montréal QC, Canada</div>
+              </div>
+              <!-- ============= PHONE ============= -->
+              <div id="contact-element">
+                <img src="images/phone.svg" alt="phone">
+                <div>+33783478728</div>
+              </div>
+              <!-- ============= E-MAIL ============= -->
+              <div id="contact-element">
+                <img src="images/e-mail.svg" alt="e-mail">
+                baptiste.gorteau@gmail.com
+              </div>
+              <div id="contact_networks">
+                <a id="links_networks_black" href="https://github.com/BGorteau" target="_blank"><p class="fab fa-github" style='font-size:30px'></p></a>
+                <a id="links_networks_black" href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/" target="_blank"><p class="fab fa-linkedin" style='font-size:30px'></p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============= CHANGE LANGUAGE (EN/FR) ============= -->
+        <div id="change-language">
+          <img src="images/planet.svg" alt="language">
+          <a id="language_toggle"></a>
+        </div>
+      </nav>
+    <a id="open-language" target="_blank">
+      <img id="language-icon" src="images/planet.svg">
+    </a>
+    <div class="language-overlay" id="language-overlay">
+      <div class="language-modal" id="language-modal">
+        <span class="language-close-btn" id="language-closeBtn">&times;</span>
+          <p id="mobile_language"></p>
+          <a id="item_language_menu" href="index.html"></a>
+      </div>
+    </div>
+  </header>
+
+<!--   <h1 id="greeting"></h1>
+  <p id="description"></p> -->
+  <!-- <a id="language-toggle">English</a> -->
+
+  <!-- ============= PAGE BODY ============= -->
+
+  <div id="page-body">
+
+    <!-- ============= PRESENTATION ============= -->
+
+    <div id="presentation">
+      <div id="presentation-content">
+        <h1>Baptiste Gorteau</h1>
+        <h4 id="presentation_h4"></h4>
+        <img id="pres-img-mobile" src="images/photo_BGO.jpg" alt="Photo profil">
+        <hr>
+        <div id="presentation_text"></div>
+          <div id="presentation_links">
+            <a id="pres_download_cv" href="pdf/baptiste-gorteau-en.pdf" target="_blank" download="cv-baptiste-gorteau.pdf" class="black-button"></a>
+            <a id="links_networks_black" href="https://github.com/BGorteau" target="_blank"><p class="fab fa-github" style='font-size:30px'></p></a>
+            <a id="links_networks_black" href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/" target="_blank"><p class="fab fa-linkedin" style='font-size:30px'></p></a>
+          </div>
+      </div>
+      <img id="pres-img-std" src="images/photo_BGO.jpg" alt="Photo profil">
+    </div>
+
+    <!-- ============= SKILLS ============= -->
+
+    <div id="skills">
+      <h2 id="skills_h2"></h2>
+      <div id="skills-tech-pers">
+        <a onclick="change_skills('tech')" class="click-skills" target="_blank"><u id="tech_skills"></u></a>
+        <a onclick="change_skills('pers')" class="click-skills" target="_blank"><u id="pers_skills"></u></a>
+      </div>
+      <div id="skills-text"
+       data-skill-tech='
+          <div class="skill">Python</div> 
+          <div class="skill">R</div> 
+          <div class="skill">SQL</div> 
+          <div class="skill">Web Scrapping</div>
+          <div class="skill">HTML</div>
+          <div class="skill">Statistics</div>
+          <div class="skill">Machine Learning</div>
+          <div class="skill">Data Visualization</div>
+          <div class="skill">Data Extraction</div>
+          <div class="skill">Data Transformation</div>'
+       data-skill-pers='
+          <div class="skill">Curious</div> 
+          <div class="skill">Sociable</div> 
+          <div class="skill">Worker</div> 
+          <div class="skill">Problem Solving</div>'>
+        <div class="skill">Python</div> 
+        <div class="skill">R</div> 
+        <div class="skill">SQL</div> 
+        <div class="skill">Web Scrapping</div>
+        <div class="skill">HTML</div>
+        <div class="skill">Statistics</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Data Extraction</div>
+        <div class="skill">Data Transformation</div>  
+      </div>
+      <div id="skills-button">
+        <a href="pdf/baptiste-gorteau-fr.pdf", target="_blank", download="cv-baptiste-gorteau.pdf">
+          <div id="skills_know_more" class="black-button"></div>
+        </a>
+        <a href="projects.html">
+          <div id="skills_see_projects" class="white-button"></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ============= PROJECTS ============= -->
+
+    <div id="projects">
+      <h2 id="projects_h2"></h2>
+      <div id="all-projects">
+        <div id="display-projects">
+          <!-- =========== PROJECT NUMBER 1 =========== -->
+          <div id="project-presentation">
+            <a id="click-project" href="https://github.com/BGorteau/WA_MD_scrapping" target="_blank">
+              <img src="images/athletics.jpg" alt="World_Atheltics_Scrapping">
+            </a>
+            <h3 id="proj_1_h3"></h3>
+            <div id="project-skills">
+              <div id="proj_1_skill_1" class="project-skill-button"></div>
+              <div id="proj_1_skill_2" class="project-skill-button"></div>
+              <div id="proj_1_skill_3" class="project-skill-button"></div>
+            </div>
+            <p id="proj_1_desc"></p>
+          <!-- =========== PROJECT NUMBER 2 =========== -->
+          </div>
+          <div id="project-presentation">
+            <a id="click-project" href="https://github.com/BGorteau/2025_Big_Data_Cup" target="_blank">
+              <img src="images/hockey.jpg" alt="Big_Data_Cup">
+            </a>
+            <h3 id="proj_2_h3"></h3>
+            <div id="project-skills">
+              <div id="proj_2_skill_1" class="project-skill-button"></div>
+              <div id="proj_2_skill_2" class="project-skill-button"></div>
+              <div id="proj_2_skill_3" class="project-skill-button"></div>
+            </div>
+            <p id="proj_2_desc">
+            </p>
+          </div>
+          <!-- =========== PROJECT NUMBER 3 =========== -->
+          <div id="project-presentation">
+            <a id="click-project" href="https://github.com/BGorteau/uis_representations" target="_blank">
+              <img src="images/school.jpeg" alt="education_data_viz">
+            </a>
+            <h3 id="proj_3_h3"></h3>
+            <div id="project-skills">
+              <div id="proj_3_skill_1" class="project-skill-button"></div>
+              <div id="proj_3_skill_2" class="project-skill-button"></div>
+              <div id="proj_3_skill_3" class="project-skill-button"></div>
+            </div>
+            <p id="proj_3_desc"></p>
+          </div>
+        </div>
+        <div id="display-more-projects" style="display: none;">
+          <!-- =========== PROJECT NUMBER 4 =========== -->
+          <div id="project-presentation">
+            <a id="click-project" href="https://github.com/BGorteau/Price_prediction_NYC_AirBnB" target="_blank">
+              <img src="images/nyc.jpg" alt="coup_etat">
+            </a>
+            <h3 id="proj_4_h3"></h3>
+            <div id="project-skills">
+              <div id="proj_4_skill_1" class="project-skill-button"></div>
+              <div id="proj_4_skill_2" class="project-skill-button"></div>
+              <div id="proj_4_skill_3" class="project-skill-button"></div>
+            </div>
+            <p id="proj_4_desc"></p>
+          </div>
+          <!-- =========== PROJECT NUMBER 5 =========== -->
+          <div id="project-presentation">
+            <a id="click-project" href="https://github.com/BGorteau/NLP_LeMonde_tweets_2022" target="_blank">
+              <img src="images/newspapers.jpg" alt="NLP">
+            </a>
+            <h3 id="proj_5_h3"></h3>
+            <div id="project-skills">
+              <div id="proj_5_skill_1" class="project-skill-button"></div>
+              <div id="proj_5_skill_2" class="project-skill-button"></div>
+              <div id="proj_5_skill_3" class="project-skill-button"></div>
+            </div>
+            <p id="proj_5_desc"></p>
+          </div>
+          <!-- =========== PROJECT NUMBER 6 =========== -->
+          <div id="project-presentation">
+            <a id="click-project" href="https://github.com/BGorteau/code_PCA" target="_blank">
+              <img src="images/pca.jpg" alt="pca">
+            </a>
+            <h3 id="proj_6_h3"></h3>
+            <div id="project-skills">
+              <div id="proj_6_skill_1" class="project-skill-button"></div>
+              <div id="proj_6_skill_2" class="project-skill-button"></div>
+              <div id="proj_6_skill_3" class="project-skill-button"></div>
+            </div>
+            <p id="proj_6_desc"></p>
+          </div>
+        </div>
+      </div>
+      <div id="projects-dropdown">
+        <a id="dropdown_button" onclick="toggleProjects()", target="_blank"></a>
+      </div>
+    </div>
+
+    <!-- ============= CONTACTS ============= -->
+
+    <div id="contacts">
+      <h2 id="contacts_h2"></h2>
+      <div id="sup-contacts-display">
+        <div id="contacts-display">
+          <div id="contact-element">
+            <img src="images/loc.svg" alt="localisation">
+            <div>Montréal QC, Canada</div>
+          </div>
+          <div id="contact-element">
+            <img src="images/phone.svg" alt="phone">
+            <div>+33783478728</div>
+          </div>
+          <div id="contact-element">
+            <img src="images/e-mail.svg" alt="e-mail">
+            <div>baptiste.gorteau@gmail.com</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="home-page-top">
-  		<br>
-  		<br>
-  		<br>
-  		<div class="text-home-page-top", id="dynamic-text-home-page-top">
-	  		<h1>BAPTISTE GORTEAU</h1>
-	  		<br>
-	  		Diplômé d'un master en mathématiques appliquées et statistiques à l'Université de Rennes 2. 
-	  		<br>
-	  		Passionné par les applications des mathématiques aux domaines du sport et de la géopolitique.
-	  		<br>
-	  		<br>
-	  		<a href="pdf/baptiste-gorteau-fr.pdf", target="_blank", download="cv-baptiste-gorteau.pdf">
-		  		<div id="download-cv">
-		  			Téléchargez mon CV
-		  		</div>
-	  		</a>
-  		</div>
-  </div>
-  <br>
-  <br>
-  <center>
-  <div id="content-hp">
-  	<div class=projet-hp>
-        <div class="project-gauche-hp">
-            <a href="fr/page-projets-ecole.html">
-          	 <img src="images/university.jpg" alt="Image", class = "image-projet-hp">
-            </a>
-        </div>
-        <div class="project-droite-hp">
-        <h2>PROJETS UNIVERSITÉ</h2>
-          Projets réalisés au cours de mon master mathématiques appliquées et statistiques à l'Université de Rennes 2.
-          <br>
-          <br>
-          <a href="fr/page-projets-ecole.html">
-	          <div id="acces-button">
-	          	DÉCOUVRIR
-	          </div>
-      	  </a>
-        </div>
+  <!-- ================== FOOTER ==================== -->
+  <footer>
+    <p id="footer_copyright"></p>
+    <div id="network_footer">
+      <div id="github_footer">
+        <a href="https://github.com/BGorteau" target="_blank">
+          <p class="fab fa-github" style='font-size:25px'></p>
+          <p>BGorteau</p>
+        </a>
       </div>
-      <div class=projet-hp>
-      	<div class="project-droite-hp">
-        <h2>PROJETS PERSONNELS</h2>
-          Projets réalisés par moi même sur des sujets choisis.
-          <br>
-          <br>
-          <a href="fr/page-projets-perso.html">
-	          <div id="acces-button">
-	          	DÉCOUVRIR
-	          </div>
-      	  </a>
-        </div>
-        <div class="project-gauche-hp">
-            <a href="fr/page-projets-perso.html">
-          	 <img src="images/personal-project.jpg" alt="Image", class = "image-projet-hp">
-            </a>
-        </div>
+      <div id="linkedin_footer">
+        <a href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/" target="_blank">
+          <p class="fab fa-linkedin" style='font-size:25px'></p>
+          <p>Baptiste Gorteau</p>
+        </a>
       </div>
-	    <div id="contact">
-	    	<h1>CONTACTEZ MOI</h1>
-	    	<br>
-	    	<center>
-	    	<div id="contact-content">
-    			<h2> Informations </h2>
-          <a href="mailto:baptiste.gorteau@gmail.com">
-    			 <i class="fas fa-envelope"></i>baptiste.gorteau@gmail.com
-          </a>
-    			<br>
-    			<br>
-    			<i class="fas fa-phone"></i>+33 7 83 47 87 18
-    			<br>
-    			<br>
-    			<a href="https://www.linkedin.com/in/baptiste-gorteau-2ab174200/">
-    			 <i class="fab fa-linkedin"></i> Baptiste Gorteau
-    			</a>
-    			<br>
-    			<br>
-    			<a href="https://github.com/BGorteau">
-    			 <i class="fab fa-github"></i> bgorteau
-    			</a>
-	    	</div>
-	    	</center>
-	    </div>
-  </div>
-  </center>
+    </div>
+  </footer>
+<!-- ================== JS script ==================== -->
+  <script src="js/lang.js"></script>
+  <script src='js/script.js' defer></script>
 </body>
 </html>
