@@ -23,7 +23,7 @@ const translations = {
 
     // ============ PRESENTATION ============
     presentation_h4: "Data Scientist",
-    presentation_text: "Diplômé d'un master en mathématiques appliquées et statistiques de l'université Rennes 2, je bénéficie de trois années d'expérience professionnelle dans le domaine de la data. Je possède également un intérêt marqué pour l’analyse de données dans les domaines du sport et de la géopolitique. Je suis ouvert à toute collaboration ou discussion constructive. N'hésitez pas à me contacter.",
+    presentation_text: "Diplômé d'un master en mathématiques appliquées et statistiques de l'Université Rennes 2, je bénéficie de trois années d'expérience professionnelle dans le domaine de la data. Je possède également un intérêt marqué pour l’analyse de données dans les domaines du sport et de la géopolitique. Je suis ouvert à toute collaboration ou discussion constructive. N'hésitez pas à me contacter.",
     pres_download_cv: "Télécharger mon CV",
     
     // ============ SKILLS ============
@@ -52,7 +52,7 @@ const translations = {
     proj_2_skill_1: "Python",
     proj_2_skill_2: "Diagramme de Voronoï",
     proj_2_skill_3: "Données de tracking",
-    proj_2_desc: "Analyse des données sur la disponibilité des joueurs de hockey dans le cadre de la Big Data Cup 2025 organisée par Stathletes.",
+    proj_2_desc: "Analyse des données sur la disponibilité des joueurs de hockey. Ce projet m'a permis d'atteindre la finale de la Big Data Cup 2025 organisée par Stathletes.",
     // ===== PROJECT NUMBER 3 =====
     proj_3_h3: "Prédiction des prix des logements Airbnb à New York",
     proj_3_skill_1: "Python",
@@ -83,7 +83,7 @@ const translations = {
 
     // ============ ABOUT ============
     about_pres_h2: 'Présentation',
-    about_presentation_text: "Mon parcours dans le domaine de la data commence par cinq années d’études à l’université Rennes 2. Au cours de celles-ci, j’ai obtenu une licence en mathématiques et informatique appliquées aux sciences humaines et sociales (MIASHS) et un master en mathématiques appliquées et statistiques (MAS). Durant mon master, j’ai occupé pendant un an et demi les postes de développeur et de data scientist chez Capgemini. À la suite de mes études, j’ai effectué une mission d’un an avec l’équipe du Rapport mondial de suivi sur l'éducation de l’UNESCO en tant que consultant data. En parallèle de mon travail, j’aime réaliser des projets mêlant l’analyse de données et le sport.",
+    about_presentation_text: "Mon parcours dans le domaine de la data commence à l'Université Rennes 2. Au cours de celles-ci, j’ai obtenu une licence en Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales (MIASHS) et un master en Mathématiques Appliquées et Statistiques (MAS). Durant mon master, j’ai occupé pendant un an et demi les postes de développeur et de data scientist chez Capgemini. À la suite de mes études, j’ai effectué une mission d’un an avec l’équipe du Rapport mondial de suivi sur l'éducation de l’UNESCO en tant que consultant data. En parallèle de mon travail, j’aime réaliser des projets mêlant l’analyse de données et le sport.",
     about_experience_h2: 'Expérience',
     // ===== EXPERIENCE NUMBER 1 =====
     about_exp_1_date: 'Avril 2024 - Avril 2025',
@@ -161,7 +161,7 @@ const translations = {
     proj_2_skill_1: "Python",
     proj_2_skill_2: "Voronoi Diagram",
     proj_2_skill_3: "Tracking Data",
-    proj_2_desc: "Data analysis on hockey player availability as part of the 2025 Big Data Cup organized by Stathletes.",
+    proj_2_desc: "Data analysis on hockey player availability. This project allowed me to reach the final of the 2025 Big Data Cup organized by Stathletes",
     // ===== PROJECT NUMBER 3 =====
     proj_3_h3: "New York Airbnb Price Prediction",
     proj_3_skill_1: "Python",
@@ -192,7 +192,7 @@ const translations = {
 
     // ============ ABOUT ============
     about_pres_h2: 'Presentation',
-    about_presentation_text: "My journey in the data field began with five years of study at Rennes 2 University. During these years, I obtained a bachelor's degree in mathematics and computer science applied to the human and social sciences and a master's degree in applied mathematics and statistics. During my master's degree, I worked for a year and a half as a developer and data scientist at Capgemini. Following my studies, I completed a one-year mission with the UNESCO Global Education Monitoring Report team as a data consultant. Alongside my work, I enjoy carrying out projects combining data analysis and sports.",
+    about_presentation_text: "My journey in the data field began at Rennes 2 University. During these years, I obtained a bachelor's degree in Mathematics and Computer Science Applied to the Human and Social Sciences and a master's degree in Applied Mathematics and Statistics. During my master's degree, I worked for a year and a half as a developer and data scientist at Capgemini. Following my studies, I completed a one-year mission with the UNESCO Global Education Monitoring Report team as a data consultant. Alongside my work, I enjoy carrying out projects combining data analysis and sports.",
     about_experience_h2: 'Experience',
     // ===== EXPERIENCE NUMBER 1 =====
     about_exp_1_date: 'April 2024 - April 2025',
