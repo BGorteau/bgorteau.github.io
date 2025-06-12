@@ -261,6 +261,16 @@ header nav a:hover {
   font-size: 14px;
   color: #303030;
   cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.clicked-click-skills {
+  font-family: "Noto Sans";
+  font-weight: 500;
+  font-size: 14px;
+  color: lightgrey;
+  cursor: pointer;
 }
 
 .click-skills:hover {

@@ -18,7 +18,18 @@ function renderSkills() {
 function change_skills(type) {
   currentSkillsType = type;
   renderSkills();
+
+  const techBtn = document.getElementById("tech_skills");
+  const persBtn = document.getElementById("pers_skills");
+
+  if (type === 'tech') {
+    techBtn.classList.add("clicked-click-skills");
+    persBtn.classList.remove("clicked-click-skills");
+  } else {
+    persBtn.classList.add("clicked-click-skills");
+    techBtn.classList.remove("clicked-click-skills");
   }
+}
 
 /* ---------------------------- LOAD ALL PROJECTS -------------------------------------*/
 
@@ -43,7 +54,7 @@ function updateContent() {
     if (id !== "skills" && id !== "dropdown_show" && id !== "dropdown_hide") {
       const el = document.getElementById(id);
       if (el) {
-        el.textContent = langData[id];
+        el.innerHTML = langData[id];
       }
     }
   }
@@ -170,5 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.target === language_overlay) language_overlay.style.display = 'none';
     });
   }
+  // Met la bonne couleur au démarrage
+  document.getElementById("tech_skills").classList.add("clicked-click-skills");
 });
 
