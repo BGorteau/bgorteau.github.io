@@ -84,7 +84,7 @@ const translations = {
 
     // ============ ABOUT ============
     about_pres_h2: 'Présentation',
-    about_presentation_text: "Mon parcours dans le domaine de la data commence à l'Université Rennes 2. Au cours de celles-ci, j’ai obtenu une licence en <strong>Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales (MIASHS)</strong> et un master en <strong>Mathématiques Appliquées et Statistiques (MAS)</strong>. Durant mon master, j’ai occupé pendant un an et demi les postes de développeur et de data scientist chez <strong>Capgemini</strong>. À la suite de mes études, j’ai effectué une mission d’un an avec l’équipe du <strong>Rapport mondial de suivi sur l'éducation de l’UNESCO</strong> en tant que consultant data. En parallèle de mon travail, j’aime réaliser des projets data appliqués au sport et à la géopolitique.",
+    about_presentation_text: "Mon parcours dans le domaine de la data commence à l'Université Rennes 2. J'y ai obtenu une licence en <strong>Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales (MIASHS)</strong> et un master en <strong>Mathématiques Appliquées et Statistiques (MAS)</strong>. Durant mon master, j’ai occupé pendant un an et demi les postes de développeur et de data scientist chez <strong>Capgemini</strong>. À la suite de mes études, j’ai effectué une mission d’un an avec l’équipe du <strong>Rapport mondial de suivi sur l'éducation de l’UNESCO</strong> en tant que consultant data. En parallèle de mon travail, j’aime réaliser des projets data appliqués au sport et à la géopolitique.",
     about_experience_h2: 'Expériences professionnelles',
     // ===== EXPERIENCE NUMBER 1 =====
     about_exp_1_date: 'Avril 2024 - Avril 2025',
