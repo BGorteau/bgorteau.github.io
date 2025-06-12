@@ -194,7 +194,7 @@ const translations = {
 
     // ============ ABOUT ============
     about_pres_h2: 'Presentation',
-    about_presentation_text: "My journey in the data field began at Rennes 2 University (France). During these years, I obtained a <strong>bachelor's degree in Mathematics and Computer Science Applied to the Human and Social Sciences</strong> and a <strong>master's degree in Applied Mathematics and Statistics</strong>. During my master's degree, I worked for a year and a half as a developer and data scientist at <strong>Capgemini</strong>. Following my studies, I completed a one-year mission with the <strong>UNESCO Global Education Monitoring Report</strong> team as a data consultant. Alongside my work, I like to carry out data projects applied to sport and geopolitics.",
+    about_presentation_text: "My journey in the data field began at Rennes 2 University (France). There, I obtained a <strong>bachelor's degree in Mathematics and Computer Science Applied to the Human and Social Sciences</strong> and a <strong>master's degree in Applied Mathematics and Statistics</strong>. During my master's degree, I worked for a year and a half as a developer and data scientist at <strong>Capgemini</strong>. Following my studies, I completed a one-year mission with the <strong>UNESCO Global Education Monitoring Report</strong> team as a data consultant. Alongside my work, I like to carry out data projects applied to sport and geopolitics.",
     about_experience_h2: 'Professional experiences',
     // ===== EXPERIENCE NUMBER 1 =====
     about_exp_1_date: 'April 2024 - April 2025',
