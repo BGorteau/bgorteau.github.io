@@ -23,7 +23,7 @@ const translations = {
 
     // ============ PRESENTATION ============
     presentation_h4: "Data Scientist",
-    presentation_text: "Titulaire d’un <strong>master en Mathématiques Appliquées et Statistiques</strong> de l’Université Rennes 2, je cumule trois années d’expérience dans le domaine de la <strong>data</strong>, acquises d’abord chez <strong>Capgemini</strong>, puis à l’<strong>UNESCO</strong>. Je possède également un intérêt marqué pour l’<strong>analyse de données</strong> dans les domaines du sport et de la géopolitique. Je serais ravi de mettre mes compétences au service de vos projets et reste ouvert à toute discussion constructive. N'hésitez pas à me contacter.",
+    presentation_text: "Titulaire d’un <strong>master en Mathématiques Appliquées et Statistiques</strong> de l’Université Rennes 2, je cumule trois années d’expérience dans le domaine de la <strong>data science</strong>, acquises d’abord chez <strong>Capgemini</strong>, puis à l’<strong>UNESCO</strong>. Je possède également un intérêt marqué pour l’<strong>analyse de données</strong> dans les domaines du sport et de la géopolitique. Je serais ravi de mettre mes compétences au service de vos projets et reste ouvert à toute discussion constructive. N'hésitez pas à me contacter.",
     pres_download_cv: "Télécharger mon CV",
     projects_h2_hp: "Applications concrètes",
     
@@ -133,7 +133,7 @@ const translations = {
 
     // ============ PRESENTATION ============
     presentation_h4: "Data Scientist",
-    presentation_text: "With a <strong>Master's degree in Applied Mathematics and Statistics</strong> from Rennes 2 University, I bring three years of experience in the data field, first at <strong>Capgemini</strong> and then at <strong>UNESCO</strong>. I also have a keen interest in <strong>data analysis</strong> in the fields of sports and geopolitics. I would be delighted to contribute my skills to your projects and remain open to constructive discussion. Please do not hesitate to contact me.",
+    presentation_text: "With a <strong>Master's degree in Applied Mathematics and Statistics</strong> from Rennes 2 University, I bring three years of experience in the <strong>data science</strong> field, first at <strong>Capgemini</strong> and then at <strong>UNESCO</strong>. I also have a keen interest in <strong>data analysis</strong> in the fields of sports and geopolitics. I would be delighted to contribute my skills to your projects and remain open to constructive discussion. Please do not hesitate to contact me.",
     pres_download_cv: "Download CV",
     projects_h2_hp: "Practical Applications",
 
